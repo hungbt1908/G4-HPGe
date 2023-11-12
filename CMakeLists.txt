@@ -1,10 +1,8 @@
 #----------------------------------------------------------------------------
 # Setup the project
-cmake_minimum_required(VERSION 3.8...3.18)
-if(${CMAKE_VERSION} VERSION_LESS 3.12)
-  cmake_policy(VERSION ${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION})
-endif()
-project(MySimulation)
+#
+cmake_minimum_required(VERSION 3.16...3.21)
+project(SIMULATION)
 
 #----------------------------------------------------------------------------
 # Find Geant4 package, activating all available UI and Vis drivers by default
@@ -35,38 +33,17 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 #----------------------------------------------------------------------------
 # Add the executable, and link it to the Geant4 libraries
 #
-add_executable(sim MySimulation.cc ${sources} ${headers})
+add_executable(sim sim.cc ${sources} ${headers})
 target_link_libraries(sim ${Geant4_LIBRARIES})
 
 #----------------------------------------------------------------------------
-# Locate sources and headers for this project
-# NB: headers are included so they will show up in IDEs
-#
-file(GLOB sources ${PROJECT_SOURCE_DIR}/*.cc)
-file(GLOB headers ${PROJECT_SOURCE_DIR}/*.hh)
-
-#----------------------------------------------------------------------------
 # Copy all scripts to the build directory, i.e. the directory in which we
-# build. This is so that we can run the executable directly because it
+# build B4a. This is so that we can run the executable directly because it
 # relies on these scripts being in the current working directory.
 #
-set(GAMMA_SCRIPTS
-  defaultMacro.mac
-  GPS.in
-  simulation.mac
-  )
 
-foreach(_script ${GAMMA_SCRIPTS})
-  configure_file(
-    ${PROJECT_SOURCE_DIR}/${_script}
-    ${PROJECT_BINARY_DIR}/${_script}
-    COPYONLY
-    )
-endforeach()
 
 #----------------------------------------------------------------------------
-# For internal Geant4 use - but has no effect if you build this
-# example standalone
+# Install the executable to 'bin' directory under CMAKE_INSTALL_PREFIX
 #
-add_custom_target(MySimulation DEPENDS sim)
-
+install(TARGETS sim DESTINATION bin)

@@ -1,6 +1,6 @@
-#include "MyPhysicList.hh"
+#include "PhysicsList.hh"
 
-MyPhysicList::MyPhysicList():G4VUserPhysicsList()
+PhysicsList::PhysicsList():G4VUserPhysicsList()
 {
     defaultCutValue = 0.01 * MeV;
     fCutForGamma = 0.01 * MeV;
@@ -11,10 +11,10 @@ MyPhysicList::MyPhysicList():G4VUserPhysicsList()
     SetVerboseLevel(1);
 }
 
-MyPhysicList::~MyPhysicList()
+PhysicsList::~PhysicsList()
 {}
 
-void MyPhysicList::ConstructParticle()
+void PhysicsList::ConstructParticle()
 {
 	G4Electron::Definition();
 	G4Gamma::Definition();
@@ -24,7 +24,7 @@ void MyPhysicList::ConstructParticle()
     //G4GenericIon::Definition();
 }
 
-void MyPhysicList::ConstructProcess()
+void PhysicsList::ConstructProcess()
 {
 	// Method (provided by the G4VUserPhysicsList base class)
 	// That assigns transortation process to all particles
@@ -40,7 +40,7 @@ void MyPhysicList::ConstructProcess()
 	ConstructGeneral();
 }
 
-void MyPhysicList::ConstructEM()
+void PhysicsList::ConstructEM()
 {
 	// Get the physics list helper
 	// It will be used to assign processes to particles
@@ -114,10 +114,10 @@ void MyPhysicList::ConstructEM()
     }
 }
 
-void MyPhysicList::ConstructGeneral()
+void PhysicsList::ConstructGeneral()
 {}
 
-void MyPhysicList::SetCuts()
+void PhysicsList::SetCuts()
 {
     if (verboseLevel > 0) {
         G4cout << "PhysicsList::SetCuts:";
@@ -136,22 +136,22 @@ void MyPhysicList::SetCuts()
     if (verboseLevel > 0) DumpCutValuesTable();
 }
 
-void MyPhysicList::SetGammaCut(G4double val)
+void PhysicsList::SetGammaCut(G4double val)
 {
     fCutForGamma = val;
 }
 
-void MyPhysicList::SetElectronCut(G4double val)
+void PhysicsList::SetElectronCut(G4double val)
 {
     fCutForElectron = val;
 }
 
-void MyPhysicList::SetPositronCut(G4double val)
+void PhysicsList::SetPositronCut(G4double val)
 {
     fCutForPositron = val;
 }
 
-/*void MyPhysicList::SetProtonCut(G4double val)
+/*void PhysicsList::SetProtonCut(G4double val)
 {
     fCutForProton = val;
 }*/

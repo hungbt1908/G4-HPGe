@@ -1,0 +1,10 @@
+# Initialize kernel
+#/run/initialize
+
+# Read source
+/control/execute GPS.in
+
+# Run
+#
+/run/printProgress 100000000
+/run/beamOn 2000000000

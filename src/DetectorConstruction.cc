@@ -1,27 +1,48 @@
-#include "MyDetectorConstruction.hh"
+#include "DetectorConstruction.hh"
 
-MyDetectorConstruction::MyDetectorConstruction()
+#include "G4Material.hh"
+#include "G4NistManager.hh"
+
+#include "G4Box.hh"
+#include "G4Tubs.hh"
+#include "G4LogicalVolume.hh"
+#include "G4VPhysicalVolume.hh"
+#include "G4PVPlacement.hh"
+#include "G4PVReplica.hh"
+#include "G4GlobalMagFieldMessenger.hh"
+#include "G4AutoDelete.hh"
+
+#include "G4GeometryManager.hh"
+#include "G4PhysicalVolumeStore.hh"
+#include "G4LogicalVolumeStore.hh"
+#include "G4SolidStore.hh"
+
+#include "G4VisAttributes.hh"
+#include "G4Colour.hh"
+
+#include "G4PhysicalConstants.hh"
+#include "G4SystemOfUnits.hh"
+
+#include "G4MultiUnion.hh"
+#include "G4SubtractionSolid.hh"
+
+DetectorConstruction::DetectorConstruction()
+	: G4VUserDetectorConstruction()
+{}
+
+DetectorConstruction::~DetectorConstruction()
+{}
+
+G4VPhysicalVolume* DetectorConstruction::Construct()
 {
-	// Messenger to change parameters of the geometry
-	detectorMessenger = new MyDetectorMessenger(this);
+  // Define materials
+  DefineMaterials();
+
+  // Define volumes
+  return DefineVolumes();
 }
 
-MyDetectorConstruction::~MyDetectorConstruction()
-{
-	delete detectorMessenger;
-}
-
-G4VPhysicalVolume *MyDetectorConstruction::Construct()
-{
-
-	// Define materials 
-	DefineMaterials();
-
-	// Define volumes
-	return DefineVolumes();
-}
-
-void MyDetectorConstruction::DefineMaterials()
+void DetectorConstruction::DefineMaterials()
 {
 	// NIST
 	G4NistManager* nist = G4NistManager::Instance();
@@ -61,8 +82,7 @@ void MyDetectorConstruction::DefineMaterials()
 	G4cout << *(G4Material::GetMaterialTable()) << G4endl;
 }
 
-
-G4VPhysicalVolume* MyDetectorConstruction::DefineVolumes()
+G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 {
 	// ------------------------------------------------------------------------------------------
 	// Mother world volume
@@ -215,3 +235,6 @@ G4VPhysicalVolume* MyDetectorConstruction::DefineVolumes()
 
 	return physWorld;
 }
+
+void DetectorConstruction::ConstructSDandField()
+{}

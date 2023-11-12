@@ -1,5 +1,5 @@
-#ifndef MYPHYSICLIST_HH
-#define MYPHYSICLIST_HH
+#ifndef PhysicsList_h
+#define PhysicsList_h 1
 
 #include "G4VUserPhysicsList.hh"
 #include "G4ParticleTypes.hh"
@@ -31,11 +31,11 @@
 
 #include "G4StepLimiter.hh"
 
-class MyPhysicList : public G4VUserPhysicsList
+class PhysicsList : public G4VUserPhysicsList
 {
 public:
-	MyPhysicList();
-	virtual ~MyPhysicList();
+	PhysicsList();
+	virtual ~PhysicsList();
 
 protected:
 	// construction of particles
