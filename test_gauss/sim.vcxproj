@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E9E206B6-80E2-3111-BAA4-98B12FCC5D32}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>sim</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Working_Spaces\G4HPGe\test_gauss\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sim.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Working_Spaces\G4HPGe\test_gauss\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sim.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Working_Spaces\G4HPGe\test_gauss\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sim.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Working_Spaces\G4HPGe\test_gauss\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sim.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Working_Spaces\G4HPGe\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Geant4/install-qt/include/Geant4" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtCore" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/./mkspecs/win32-msvc" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtGui" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtANGLE" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtWidgets" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtOpenGL" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtPrintSupport"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;G4LIB_BUILD_DLL;PTL_BUILD_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;G4UI_USE_WIN32;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_TOOLSSG_QT_GLES;G4VIS_USE_OPENGL;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;G4LIB_BUILD_DLL;PTL_BUILD_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;G4UI_USE_WIN32;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_TOOLSSG_QT_GLES;G4VIS_USE_OPENGL;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Working_Spaces\G4HPGe\include;C:\Geant4\install-qt\include\Geant4;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtPrintSupport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Working_Spaces\G4HPGe\include;C:\Geant4\install-qt\include\Geant4;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtPrintSupport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Geant4\install-qt\lib\G4Tree.lib;C:\Geant4\install-qt\lib\G4FR.lib;C:\Geant4\install-qt\lib\G4GMocren.lib;C:\Geant4\install-qt\lib\G4visHepRep.lib;C:\Geant4\install-qt\lib\G4RayTracer.lib;C:\Geant4\install-qt\lib\G4VRML.lib;C:\Geant4\install-qt\lib\G4ToolsSG.lib;C:\Geant4\install-qt\lib\G4OpenGL.lib;C:\Geant4\install-qt\lib\G4vis_management.lib;C:\Geant4\install-qt\lib\G4modeling.lib;C:\Geant4\install-qt\lib\G4interfaces.lib;C:\Geant4\install-qt\lib\G4persistency.lib;C:\Geant4\install-qt\lib\G4error_propagation.lib;C:\Geant4\install-qt\lib\G4readout.lib;C:\Geant4\install-qt\lib\G4physicslists.lib;C:\Geant4\install-qt\lib\G4run.lib;C:\Geant4\install-qt\lib\G4event.lib;C:\Geant4\install-qt\lib\G4tracking.lib;C:\Geant4\install-qt\lib\G4parmodels.lib;C:\Geant4\install-qt\lib\G4processes.lib;C:\Geant4\install-qt\lib\G4digits_hits.lib;C:\Geant4\install-qt\lib\G4track.lib;C:\Geant4\install-qt\lib\G4particles.lib;C:\Geant4\install-qt\lib\G4geometry.lib;C:\Geant4\install-qt\lib\G4materials.lib;C:\Geant4\install-qt\lib\G4graphics_reps.lib;COMCTL32.lib;opengl32.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5OpenGLd.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5PrintSupportd.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5Guid.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5Cored.lib;C:\Geant4\install-qt\lib\G4analysis.lib;C:\Geant4\install-qt\lib\G4expat.lib;C:\Geant4\install-qt\lib\G4zlib.lib;C:\Geant4\install-qt\lib\G4intercoms.lib;C:\Geant4\install-qt\lib\G4global.lib;C:\Geant4\install-qt\lib\G4clhep.lib;C:\Geant4\install-qt\lib\G4ptl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Working_Spaces/G4HPGe/test_gauss/Debug/sim.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Working_Spaces/G4HPGe/test_gauss/Debug/sim.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Working_Spaces\G4HPGe\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Geant4/install-qt/include/Geant4" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtCore" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/./mkspecs/win32-msvc" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtGui" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtANGLE" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtWidgets" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtOpenGL" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtPrintSupport"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;G4LIB_BUILD_DLL;PTL_BUILD_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;G4UI_USE_WIN32;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_TOOLSSG_QT_GLES;G4VIS_USE_OPENGL;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;G4LIB_BUILD_DLL;PTL_BUILD_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;G4UI_USE_WIN32;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_TOOLSSG_QT_GLES;G4VIS_USE_OPENGL;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Working_Spaces\G4HPGe\include;C:\Geant4\install-qt\include\Geant4;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtPrintSupport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Working_Spaces\G4HPGe\include;C:\Geant4\install-qt\include\Geant4;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtPrintSupport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Geant4\install-qt\lib\G4Tree.lib;C:\Geant4\install-qt\lib\G4FR.lib;C:\Geant4\install-qt\lib\G4GMocren.lib;C:\Geant4\install-qt\lib\G4visHepRep.lib;C:\Geant4\install-qt\lib\G4RayTracer.lib;C:\Geant4\install-qt\lib\G4VRML.lib;C:\Geant4\install-qt\lib\G4ToolsSG.lib;C:\Geant4\install-qt\lib\G4OpenGL.lib;C:\Geant4\install-qt\lib\G4vis_management.lib;C:\Geant4\install-qt\lib\G4modeling.lib;C:\Geant4\install-qt\lib\G4interfaces.lib;C:\Geant4\install-qt\lib\G4persistency.lib;C:\Geant4\install-qt\lib\G4error_propagation.lib;C:\Geant4\install-qt\lib\G4readout.lib;C:\Geant4\install-qt\lib\G4physicslists.lib;C:\Geant4\install-qt\lib\G4run.lib;C:\Geant4\install-qt\lib\G4event.lib;C:\Geant4\install-qt\lib\G4tracking.lib;C:\Geant4\install-qt\lib\G4parmodels.lib;C:\Geant4\install-qt\lib\G4processes.lib;C:\Geant4\install-qt\lib\G4digits_hits.lib;C:\Geant4\install-qt\lib\G4track.lib;C:\Geant4\install-qt\lib\G4particles.lib;C:\Geant4\install-qt\lib\G4geometry.lib;C:\Geant4\install-qt\lib\G4materials.lib;C:\Geant4\install-qt\lib\G4graphics_reps.lib;COMCTL32.lib;opengl32.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5OpenGL.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5PrintSupport.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5Core.lib;C:\Geant4\install-qt\lib\G4analysis.lib;C:\Geant4\install-qt\lib\G4expat.lib;C:\Geant4\install-qt\lib\G4zlib.lib;C:\Geant4\install-qt\lib\G4intercoms.lib;C:\Geant4\install-qt\lib\G4global.lib;C:\Geant4\install-qt\lib\G4clhep.lib;C:\Geant4\install-qt\lib\G4ptl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Working_Spaces/G4HPGe/test_gauss/Release/sim.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Working_Spaces/G4HPGe/test_gauss/Release/sim.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Working_Spaces\G4HPGe\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Geant4/install-qt/include/Geant4" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtCore" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/./mkspecs/win32-msvc" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtGui" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtANGLE" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtWidgets" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtOpenGL" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtPrintSupport"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;G4LIB_BUILD_DLL;PTL_BUILD_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;G4UI_USE_WIN32;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_TOOLSSG_QT_GLES;G4VIS_USE_OPENGL;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;G4LIB_BUILD_DLL;PTL_BUILD_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;G4UI_USE_WIN32;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_TOOLSSG_QT_GLES;G4VIS_USE_OPENGL;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Working_Spaces\G4HPGe\include;C:\Geant4\install-qt\include\Geant4;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtPrintSupport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Working_Spaces\G4HPGe\include;C:\Geant4\install-qt\include\Geant4;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtPrintSupport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Geant4\install-qt\lib\G4Tree.lib;C:\Geant4\install-qt\lib\G4FR.lib;C:\Geant4\install-qt\lib\G4GMocren.lib;C:\Geant4\install-qt\lib\G4visHepRep.lib;C:\Geant4\install-qt\lib\G4RayTracer.lib;C:\Geant4\install-qt\lib\G4VRML.lib;C:\Geant4\install-qt\lib\G4ToolsSG.lib;C:\Geant4\install-qt\lib\G4OpenGL.lib;C:\Geant4\install-qt\lib\G4vis_management.lib;C:\Geant4\install-qt\lib\G4modeling.lib;C:\Geant4\install-qt\lib\G4interfaces.lib;C:\Geant4\install-qt\lib\G4persistency.lib;C:\Geant4\install-qt\lib\G4error_propagation.lib;C:\Geant4\install-qt\lib\G4readout.lib;C:\Geant4\install-qt\lib\G4physicslists.lib;C:\Geant4\install-qt\lib\G4run.lib;C:\Geant4\install-qt\lib\G4event.lib;C:\Geant4\install-qt\lib\G4tracking.lib;C:\Geant4\install-qt\lib\G4parmodels.lib;C:\Geant4\install-qt\lib\G4processes.lib;C:\Geant4\install-qt\lib\G4digits_hits.lib;C:\Geant4\install-qt\lib\G4track.lib;C:\Geant4\install-qt\lib\G4particles.lib;C:\Geant4\install-qt\lib\G4geometry.lib;C:\Geant4\install-qt\lib\G4materials.lib;C:\Geant4\install-qt\lib\G4graphics_reps.lib;COMCTL32.lib;opengl32.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5OpenGL.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5PrintSupport.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5Core.lib;C:\Geant4\install-qt\lib\G4analysis.lib;C:\Geant4\install-qt\lib\G4expat.lib;C:\Geant4\install-qt\lib\G4zlib.lib;C:\Geant4\install-qt\lib\G4intercoms.lib;C:\Geant4\install-qt\lib\G4global.lib;C:\Geant4\install-qt\lib\G4clhep.lib;C:\Geant4\install-qt\lib\G4ptl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Working_Spaces/G4HPGe/test_gauss/MinSizeRel/sim.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Working_Spaces/G4HPGe/test_gauss/MinSizeRel/sim.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Working_Spaces\G4HPGe\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Geant4/install-qt/include/Geant4" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtCore" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/./mkspecs/win32-msvc" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtGui" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtANGLE" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtWidgets" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtOpenGL" /external:I "C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/include/QtPrintSupport"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;G4LIB_BUILD_DLL;PTL_BUILD_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;G4UI_USE_WIN32;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_TOOLSSG_QT_GLES;G4VIS_USE_OPENGL;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;G4LIB_BUILD_DLL;PTL_BUILD_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;G4UI_USE_WIN32;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_TOOLSSG_QT_GLES;G4VIS_USE_OPENGL;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Working_Spaces\G4HPGe\include;C:\Geant4\install-qt\include\Geant4;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtPrintSupport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Working_Spaces\G4HPGe\include;C:\Geant4\install-qt\include\Geant4;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\include\QtPrintSupport;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Geant4\install-qt\lib\G4Tree.lib;C:\Geant4\install-qt\lib\G4FR.lib;C:\Geant4\install-qt\lib\G4GMocren.lib;C:\Geant4\install-qt\lib\G4visHepRep.lib;C:\Geant4\install-qt\lib\G4RayTracer.lib;C:\Geant4\install-qt\lib\G4VRML.lib;C:\Geant4\install-qt\lib\G4ToolsSG.lib;C:\Geant4\install-qt\lib\G4OpenGL.lib;C:\Geant4\install-qt\lib\G4vis_management.lib;C:\Geant4\install-qt\lib\G4modeling.lib;C:\Geant4\install-qt\lib\G4interfaces.lib;C:\Geant4\install-qt\lib\G4persistency.lib;C:\Geant4\install-qt\lib\G4error_propagation.lib;C:\Geant4\install-qt\lib\G4readout.lib;C:\Geant4\install-qt\lib\G4physicslists.lib;C:\Geant4\install-qt\lib\G4run.lib;C:\Geant4\install-qt\lib\G4event.lib;C:\Geant4\install-qt\lib\G4tracking.lib;C:\Geant4\install-qt\lib\G4parmodels.lib;C:\Geant4\install-qt\lib\G4processes.lib;C:\Geant4\install-qt\lib\G4digits_hits.lib;C:\Geant4\install-qt\lib\G4track.lib;C:\Geant4\install-qt\lib\G4particles.lib;C:\Geant4\install-qt\lib\G4geometry.lib;C:\Geant4\install-qt\lib\G4materials.lib;C:\Geant4\install-qt\lib\G4graphics_reps.lib;COMCTL32.lib;opengl32.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5OpenGL.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5PrintSupport.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\Qt5Core.lib;C:\Geant4\install-qt\lib\G4analysis.lib;C:\Geant4\install-qt\lib\G4expat.lib;C:\Geant4\install-qt\lib\G4zlib.lib;C:\Geant4\install-qt\lib\G4intercoms.lib;C:\Geant4\install-qt\lib\G4global.lib;C:\Geant4\install-qt\lib\G4clhep.lib;C:\Geant4\install-qt\lib\G4ptl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Working_Spaces/G4HPGe/test_gauss/RelWithDebInfo/sim.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Working_Spaces/G4HPGe/test_gauss/RelWithDebInfo/sim.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Working_Spaces\G4HPGe\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Working_Spaces/G4HPGe/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Working_Spaces/G4HPGe -BD:/Working_Spaces/G4HPGe/test_gauss --check-stamp-file D:/Working_Spaces/G4HPGe/test_gauss/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Geant4\install-qt\lib\cmake\Geant4\Geant4Config.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4ConfigVersion.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4LibraryDepends-release.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4LibraryDepends.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4PackageCache.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Modules\IntelCompileFeatures.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Modules\MSVCCompileFeatures.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLConfig.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLConfigVersion.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLTargets-release.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLTargets.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\UseGeant4.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeCCompiler.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeCXXCompiler.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeRCCompiler.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Working_Spaces/G4HPGe/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Working_Spaces/G4HPGe -BD:/Working_Spaces/G4HPGe/test_gauss --check-stamp-file D:/Working_Spaces/G4HPGe/test_gauss/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Geant4\install-qt\lib\cmake\Geant4\Geant4Config.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4ConfigVersion.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4LibraryDepends-release.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4LibraryDepends.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4PackageCache.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Modules\IntelCompileFeatures.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Modules\MSVCCompileFeatures.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLConfig.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLConfigVersion.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLTargets-release.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLTargets.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\UseGeant4.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeCCompiler.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeCXXCompiler.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeRCCompiler.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Working_Spaces/G4HPGe/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Working_Spaces/G4HPGe -BD:/Working_Spaces/G4HPGe/test_gauss --check-stamp-file D:/Working_Spaces/G4HPGe/test_gauss/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Geant4\install-qt\lib\cmake\Geant4\Geant4Config.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4ConfigVersion.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4LibraryDepends-release.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4LibraryDepends.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4PackageCache.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Modules\IntelCompileFeatures.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Modules\MSVCCompileFeatures.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLConfig.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLConfigVersion.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLTargets-release.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLTargets.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\UseGeant4.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeCCompiler.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeCXXCompiler.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeRCCompiler.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Working_Spaces/G4HPGe/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Working_Spaces/G4HPGe -BD:/Working_Spaces/G4HPGe/test_gauss --check-stamp-file D:/Working_Spaces/G4HPGe/test_gauss/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Geant4\install-qt\lib\cmake\Geant4\Geant4Config.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4ConfigVersion.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4LibraryDepends-release.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4LibraryDepends.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Geant4PackageCache.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Modules\IntelCompileFeatures.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\Modules\MSVCCompileFeatures.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLConfig.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLConfigVersion.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLTargets-release.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\PTL\PTLTargets.cmake;C:\Geant4\install-qt\lib\cmake\Geant4\UseGeant4.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\Qt5.12.12\5.12.12\msvc2017_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeCCompiler.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeCXXCompiler.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeRCCompiler.cmake;D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\3.27.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Working_Spaces\G4HPGe\test_gauss\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Working_Spaces\G4HPGe\sim.cc" />
+    <ClCompile Include="D:\Working_Spaces\G4HPGe\src\ActionInitialization.cc" />
+    <ClCompile Include="D:\Working_Spaces\G4HPGe\src\DetectorConstruction.cc" />
+    <ClCompile Include="D:\Working_Spaces\G4HPGe\src\EventAction.cc" />
+    <ClCompile Include="D:\Working_Spaces\G4HPGe\src\PhysicsList.cc" />
+    <ClCompile Include="D:\Working_Spaces\G4HPGe\src\PrimaryGeneratorAction.cc" />
+    <ClCompile Include="D:\Working_Spaces\G4HPGe\src\RunAction.cc" />
+    <ClCompile Include="D:\Working_Spaces\G4HPGe\src\RunActionMessenger.cc" />
+    <ClCompile Include="D:\Working_Spaces\G4HPGe\src\SteppingAction.cc" />
+    <ClInclude Include="D:\Working_Spaces\G4HPGe\include\ActionInitialization.hh" />
+    <ClInclude Include="D:\Working_Spaces\G4HPGe\include\DetectorConstruction.hh" />
+    <ClInclude Include="D:\Working_Spaces\G4HPGe\include\EventAction.hh" />
+    <ClInclude Include="D:\Working_Spaces\G4HPGe\include\PhysicsList.hh" />
+    <ClInclude Include="D:\Working_Spaces\G4HPGe\include\PrimaryGeneratorAction.hh" />
+    <ClInclude Include="D:\Working_Spaces\G4HPGe\include\RunAction.hh" />
+    <ClInclude Include="D:\Working_Spaces\G4HPGe\include\RunActionMessenger.hh" />
+    <ClInclude Include="D:\Working_Spaces\G4HPGe\include\SteppingAction.hh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Working_Spaces\G4HPGe\test_gauss\ZERO_CHECK.vcxproj">
+      <Project>{49F94DDC-2815-33D3-8CBA-3B1D23A5EEAA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

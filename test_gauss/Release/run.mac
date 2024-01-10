@@ -1,5 +1,5 @@
 # Initialize kernel
-#/run/initialize
+/run/initialize
 
 # Read source
 /control/execute GPS.in
