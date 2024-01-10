@@ -1,4 +1,0 @@
-D:/Working_Spaces/G4HPGe/test_gauss/CMakeFiles/sim.dir
-D:/Working_Spaces/G4HPGe/test_gauss/CMakeFiles/INSTALL.dir
-D:/Working_Spaces/G4HPGe/test_gauss/CMakeFiles/ALL_BUILD.dir
-D:/Working_Spaces/G4HPGe/test_gauss/CMakeFiles/ZERO_CHECK.dir
